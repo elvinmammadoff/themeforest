@@ -20,6 +20,7 @@
     <link href="css/scrolling-nav.css" type="text/css" rel="stylesheet" />
     <link href="css/bootstrap-datepicker.css" type="text/css" rel="stylesheet" />
     <link href="css/bootstrap-datetimepicker.css" type="text/css" rel="stylesheet" />
+    <link href="css/touch-sideswipe.css" type="text/css" rel="stylesheet" />
     <link href="css/main.css" type="text/css" rel="stylesheet" />
     <link href="css/responsive.css" type="text/css" rel="stylesheet" />
 
@@ -166,7 +167,7 @@
             <div class="navbar-container" data-spy="affix" data-offset-top="400">
                 <div class="container">
                 
-                    <div class="navbar_top">
+                    <div class="navbar_top hidden-xs">
                         <div class="top_addr">
                             <span><i class="fa fa-map-marker" aria-hidden="true"></i> Your country, your city, 12345</span>
                             <span><i class="fa fa-phone" aria-hidden="true"></i> 123 456 789</span>
@@ -178,7 +179,7 @@
                         <div id="navbar_search">
                             <form method="post">
                                 <input type="text" name="q" class="form-control pull-left" value="" placeholder="Search anything">
-                                <button type="button" class="pull-right close" id="search_close"><i class="fa fa-close"></i></button>
+                                <button type="submit" class="pull-right close" id="search_close"><i class="fa fa-close"></i></button>
                             </form>
                         </div>
                     </div><!-- /.navbar_top -->
@@ -188,14 +189,11 @@
                         <div id="navbar_content">
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
                                 <a class="navbar-brand" href="#">
                                     <img src="img/logo.png" alt="logo" />
+                                </a>
+                                <a href="#cd-nav" class="cd-nav-trigger right_menu_icon">
+                                    <span><i class="fa fa-bars" aria-hidden="true"></i></span>
                                 </a>
                             </div>
 
@@ -273,388 +271,388 @@
         <div id="menu_items">
 
             <div class="filtr-item image filter burger">
-	        	<div class="row">
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Margherita</div>
-		                            <div class="short">Classic marinara sauce, authentic pepperoni,</div>
-		                            <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Margherita</div>
+                                    <div class="short">Classic marinara sauce, authentic pepperoni,</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-	        	</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
+                                    <span class="filter_item_price">$10.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="filtr-item image filter pizza active">
-        		<div class="row">
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		               <a href="javascript:;" class="block">
-		                    <div class="content">
-		    					<div class="filter_item_img">
-		    						<i class="fa fa-search-plus"></i>
-		                        	<img src="http://via.placeholder.com/136x136" alt="sample" />
-		    					</div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                       <a href="javascript:;" class="block">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="http://via.placeholder.com/136x136" alt="sample" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        		</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="filtr-item image filter frices">
-        		<div class="row">
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        		</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="filtr-item image filter salad">
-        		<div class="row">
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-        			</div>
-        		</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="filtr-item image filter drinks">
-        		<div class="row">
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-		            </div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-		            </div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-		            </div>
-        			<div class="col-sm-6">
-		                <a href="javascript:;" class="block">
-		                    <div class="content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="javascript:;" class="block">
+                            <div class="content">
                                 <div class="filter_item_img">
                                     <i class="fa fa-search-plus"></i>
                                     <img src="http://via.placeholder.com/136x136" alt="sample" />
                                 </div>
-		                        <div class="info">
-		                            <div class="name">Demo Project Name</div>
-		                            <div class="short">Graphic Design category</div>
+                                <div class="info">
+                                    <div class="name">Demo Project Name</div>
+                                    <div class="short">Graphic Design category</div>
                                     <span class="filter_item_price">$10.00</span>
-		                        </div>
-		                    </div>
-		                </a>
-		            </div>
-        		</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="text-center">
@@ -968,6 +966,40 @@
 </div>
 <!-- END body-wrapper -->
 
+
+<!-- START mobile right burger menu -->
+
+<nav class="cd-nav-container right_menu" id="cd-nav">
+    <div class="header__open_menu">
+        <a href="index.html" class="rmenu_logo" title="yagmurmebel.az">
+            <img src="img/logo.png" alt="logo" />
+        </a>
+    </div>
+    <div class="right_menu_search">
+        <form method="post">
+            <input type="text" name="q" class="form-control search_input" value="" placeholder="Search anything">
+            <button type="submit" class="search_icon"><i class="fa fa-search"></i></button>
+        </form>        
+    </div>
+    <ul class="rmenu_list">
+        <li><a class="page-scroll" href="#header">Home</a></li>
+        <li><a class="page-scroll" href="#about_us">About</a></li>
+        <li><a class="page-scroll" href="#menu">Menus</a></li>
+        <li><a class="page-scroll" href="#gallery">Gallery</a></li> 
+        <li><a class="page-scroll" href="#reservation">Reservation</a></li>
+        <li><a class="page-scroll" href="#contact">Contact</a></li>
+    </ul>
+    <div class="right_menu_addr top_addr">
+        <span><i class="fa fa-map-marker" aria-hidden="true"></i> Your country, your city, 12345</span>
+        <span><i class="fa fa-phone" aria-hidden="true"></i> 123 456 789</span>
+        <span><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 - 21:00</span>
+    </div>
+</nav>
+
+<div class="cd-overlay"></div><!-- /.cd-overlay -->
+
+<!-- END mobile right burger menu -->
+
 <!-- JavaScript -->
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -980,6 +1012,7 @@
 <script src="js/moment.js"></script>
 <script src="js/bootstrap-datepicker.js"></script> 
 <script src="js/bootstrap-datetimepicker.js"></script> 
+<script src="js/touch-sideswipe.js"></script>
 <script src="js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcg5Y2D1fpGI12T8wcbtPIsyGdw-_NV1Y&callback=myMap"></script>
 <script>
